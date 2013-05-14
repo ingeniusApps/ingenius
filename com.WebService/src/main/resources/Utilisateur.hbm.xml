@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 3 avr. 2013 10:45:25 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="Rest.com.WebService.model.Utilisateur" table="UTILISATEUR">
+        <id name="USER_ID" type="java.lang.String">
+            <column name="USER_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="LOGIN" type="java.lang.String">
+            <column name="LOGIN" sql-type="varchar2(20)" not-null="false"/>
+        </property>
+        <property name="PASSWORD" type="java.lang.String">
+            <column name="PASSWORD" sql-type="varchar2(20)" not-null="false"/>
+        </property>
+    </class>
+</hibernate-mapping>

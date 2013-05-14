@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 25 mars 2013 10:14:47 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="Rest.com.WebService.model.Article" table="ARTICLE">
+        <id name="ARTICLE_ID" type="java.lang.String">
+            <column name="ARTICLE_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="ARTICLE_TITLE" type="java.lang.String">
+            <column name="ARTICLE_TITLE" sql-type="varchar2(50)" not-null="false"/>
+        </property>
+        <property name="DATE_CREAT" type="java.util.Date">
+            <column name="DATE_CREAT" sql-type="Date" not-null="false"/>
+        </property>
+        <property name="CONTENT" type="java.lang.String">
+            <column name="CONTENT" sql-type="varchar2(4000)" not-null="false" />
+        </property>
+    </class>
+</hibernate-mapping>

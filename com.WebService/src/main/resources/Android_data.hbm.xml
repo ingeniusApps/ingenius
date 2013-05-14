@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 25 avr. 2013 09:27:47 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="Rest.com.WebService.model.Android_data" table="ANDROID_DATA">
+		<id name="ANDROID_DATA_ID" type="java.lang.String">
+			<column name="ANDROID_DATA_ID" />
+			<generator class="assigned" />
+		</id>
+		<property name="TITLE" type="java.lang.String">
+			<column name="TITLE" sql-type="varchar2(50)" not-null="false" />
+		</property>
+		<property name="USER_ID" type="java.lang.String">
+			<column name="USER_ID" sql-type="varchar2(10)" not-null="true" />
+		</property>
+		<property name="IMAGE" type="java.lang.String">
+			<column name="IMAGE" sql-type="varchar2(50)" not-null="false" />
+		</property>
+		<property name="VIDEO" type="java.lang.String">
+			<column name="VIDEO" sql-type="varchar2(50)" not-null="false" />
+		</property>
+		<property name="LONGITUDE" type="float">
+			<column name="LONGITUDE" sql-type="FLOAT" not-null="false" />
+		</property>
+		<property name="LATITUDE" type="float">
+			<column name="LATITUDE" sql-type="FLOAT" not-null="false" />
+		</property>
+		<property name="COMMENTAIRE" type="java.lang.String">
+			<column name="COMMENTAIRE" sql-type="varchar2(4000)" not-null="false" />
+		</property>
+	</class>
+</hibernate-mapping>
